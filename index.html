@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <img src="./assents/logo.png" alt="Logo esports nlw"/>
+    </header>
+
+<main>
+    <section>
+        <div> 
+     <h2 class="title">INHAI AMIGO</h2>
+     <p>Bora jogar, ler, lanchar, bora viver</p>
+    
+     <form id="form">
+        <input id="apikey" value="AIzaSyBfut_bU2gynHTXkUHbY-zPX6_MEU4ugQE" type="password" placeholder="informe a api key do gemini">
+        <select id="gameselect">
+            <option value="">selecione um jogo</option>
+            <option value="lol">LEAGUE OF LEGENDS</option>
+        </select>
+
+        <input id="questioninput" type="text" placeholder="melhor build de sona agressiva" required>
+
+        <button type="submit" id="askbutton">
+            perguntar
+        </button>
+    </form>
+
+    <div id="aiResponse" class="hidden">
+        <div class="response-content">
+
+        </div>
+    </div>
+  
+</section>
+</main>
+<script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+ <script src="./script.js"></script>
+</body>
+
+</html>
